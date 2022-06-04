@@ -5,7 +5,7 @@ const SearchBar = ({onSubmitForm}) => {
     const [searchValue, setSearchValue] = useState('')
 
   
-    onFormSubmit = (e) => {
+    const onFormSubmit = (e) => {
         e.preventDefault();
         onSubmitForm(searchValue);
     }
